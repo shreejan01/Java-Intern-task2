@@ -1,6 +1,9 @@
 # Java-Intern-task2
 
 //post operation using file
+
+    @Value("${project.image}")
+    private String path;
  
  @PostMapping("/")
     public ResponseEntity<?> createBannerAds(@RequestParam("file") MultipartFile file, @RequestParam("banner") String banner) throws JsonProcessingException, JsonMappingException, JsonParseException, IOException {
